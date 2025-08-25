@@ -328,6 +328,7 @@ header nav ul li a:hover {
 }
 
 .whatsapp-button2 {
+    align-items: center;
     display: inline-flex;
     color: white;
     padding: 10px 10px;
