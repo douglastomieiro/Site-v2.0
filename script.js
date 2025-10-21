@@ -208,7 +208,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // Animações ao rolar a página
 document.addEventListener("DOMContentLoaded", function () {
-  const sections = document.querySelectorAll(".section");
+  const sections = document.querySelectorAll(".opacidade");
 
   const observer = new IntersectionObserver(
     (entries) => {
@@ -219,7 +219,7 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     },
     {
-      threshold: 0.1, // 10% visível já dispara
+      threshold: 0,
     }
   );
 

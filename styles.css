@@ -186,9 +186,6 @@ header nav ul li a:hover {
   align-items: center;
   justify-content: space-around;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.267);
-  opacity: 0;
-  transform: translateY(50px);
-  transition: opacity 1s ease, transform 1s ease;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -196,25 +193,13 @@ header nav ul li a:hover {
   overflow: hidden;
 }
 
-/* Aplica o blur na imagem de fundo */
-.section::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: inherit;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  filter: blur(5px);
-  z-index: -2;
+.opacidade {
+  opacity: 0;
+  transition: opacity 1.5s ease;
 }
 
-.section.visible {
+.opacidade.visible {
   opacity: 1;
-  transform: translateY(0);
 }
 
 .section .info {
