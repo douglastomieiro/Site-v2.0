@@ -285,6 +285,29 @@ header nav ul li a:hover {
   transform: scale(1.05);
 }
 
+.casacontainer {
+  align-items: center;
+  display: inline-flex;
+  color: white;
+  padding: 10px 10px;
+  text-decoration: none;
+  font-size: 20px;
+  margin-top: 20px;
+  animation: pulse 2s infinite;
+  transition: background-color 0.3s ease;
+
+  background: rgba(255, 0, 0, 0.7);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 0, 0, 0.5);
+}
+
+.casacontainer:hover {
+  background: rgba(199, 0, 0, 0.7);
+}
+
 /* Botão do WhatsApp */
 .whatsapp-button {
   position: fixed;
